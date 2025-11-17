@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanka Vehicle - Vendor Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="company-logo">
+            <h1>LANKA VEHICLE</h1>
+        </div>
+        <form id="loginForm" action="index.php" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required placeholder="Enter username">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter password">
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <div id="errorMessage" class="error-message"></div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

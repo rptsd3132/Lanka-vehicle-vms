@@ -1,0 +1,267 @@
+/* style.css — Red & Orange Theme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #fff7f3;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(135deg, #ff512f, #f09819); /* Red to Orange gradient */
+    color: white;
+    padding: 2rem 3rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.header i {
+    font-size: 2rem;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+}
+
+.section-header h2 {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ff512f; /* Red tone for titles */
+}
+
+/* Buttons */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #ff512f, #f09819);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #f12711, #f5af19);
+    transform: translateY(-2px);
+}
+
+.btn-success {
+    background: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #c82333;
+    transform: translateY(-2px);
+}
+
+.btn-sm {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+}
+
+/* Tables */
+.table-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #fff0eb; /* soft red background */
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    color: #444;
+}
+
+tr:hover {
+    background: #fff5f0;
+}
+
+/* Forms */
+.form-container {
+    background: #fff8f3;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.form-row label {
+    width: 180px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-row input, .form-row select {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.form-row input:focus, .form-row select:focus {
+    border-color: #ff512f;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255,81,47,0.2);
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.status-pending { background: #ffb347; color: #333; }
+.status-processing { background: #ff6f61; color: white; }
+.status-shipped { background: #f09819; color: white; }
+.status-delivered { background: #ff512f; color: white; }
+.status-cancelled { background: #dc3545; color: white; }
+
+/* Delivered Button */
+.table-container .delivered-btn {
+    background: linear-gradient(135deg, #ff512f, #f09819);
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+.table-container .delivered-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f12711, #f5af19);
+    color: white;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        padding: 1.5rem;
+    }
+    .header h1 {
+        font-size: 2rem;
+    }
+    .container {
+        padding: 1rem;
+    }
+    .section {
+        padding: 1.5rem;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .form-row label {
+        width: 100%;
+    }
+    .section-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
